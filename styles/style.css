@@ -1,9 +1,7 @@
-@import url(https://fonts.googleapis.com/css?family=Press+Start+2P);
-
 body {
-    background: url(https://media.giphy.com/media/14zSZXA5q24PC/source.gif);
+    background: url(https://giffiles.alphacoders.com/209/209570.gif);
     color: rgb(255, 255, 255);
-    font-family: 'Press Start 2P', cursive;
+    font-family: Arial, Helvetica, sans-serif;
   
     /** permet de centrer les éléments dans la page **/
     display: flex;
@@ -17,7 +15,7 @@ body {
   /** l'image fait toujours la même hauteur **/
   img{
     margin: 40px;
-    border: 1px solid yellow;
+    border: 1px solid rgb(0, 0, 0);
     padding: 10px;
     height: 40vh;
     width: auto;
@@ -37,3 +35,98 @@ body {
   }
   
   
+
+/** boutons **/
+
+.btn {
+	box-shadow: 6px 6px 0px 0px #6d4e0b;
+	background:#333;
+	border:1px solid #000000;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+  font-family:Arial, Helvetica, sans-serif;
+	font-size: 17px;
+	padding : 7px 25px;
+	text-decoration:none;
+	text-shadow: 0px 1px 0px #810e05;
+}
+
+.btn:hover {
+	background:linear-gradient(to bottom, #f24437 5%, #c62d1f 100%);
+	background-color:#f24437;
+}
+.btn:active {
+	position:relative;
+	top:1px;
+}
+
+
+/** liste de boutons **/
+.btns-list{
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 500px;
+  justify-content: center;
+}
+.btn{
+  margin: 15px;
+}
+
+.signature{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
+  position: fixed;
+  top:0px;
+  box-shadow: 5px 5px 5px 0px rgb(0, 0, 0);
+  right: 20px;
+  background-color: #000000;
+  width: 150px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+
+}
+
+
+.signature a{
+  font-family: Arial, Helvetica, sans-serif;
+  color: #ffffff;
+  font-size: 10px;
+  text-decoration: none;
+}
+
+/** faire bouger un peu tout ça **/
+h1,
+h2 {
+  animation-name: fade-in;
+  animation-duration: 1s;
+}
+
+/** faire clignotter le sous titre **/ 
+h2 {
+  animation-iteration-count: infinite;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/** une animation de très bon goût **/
+.yeah{
+  animation: yeah 2s ease-out;
+}
+@keyframes yeah{
+  0%{
+    transform:rotate(-600deg) scale(0) rotateY(180deg)
+  }
+  100%{
+    transform: rotate(0deg) scale(1);
+  }
+}
