@@ -37,40 +37,56 @@ body {
   
 
 /** boutons **/
-
-.myButton {
-	box-shadow:inset 0px 39px 0px -24px #e67a73;
-	background-color:#e4685d;
-	border-radius:4px;
+.btn {
+	box-shadow: 3px 4px 0px 0px #9fb4f2;
+	background-color:#ffffff;
+	border-radius:15px;
 	border:1px solid #ffffff;
 	display:inline-block;
 	cursor:pointer;
-	color:#ffffff;
+	color:#404040;
 	font-family:Arial;
-	font-size:15px;
-	padding:9px 76px;
+	font-size:17px;
+	padding:7px 25px;
 	text-decoration:none;
-	text-shadow:0px 1px 0px #b23e35;
+	text-shadow:0px 1px 0px #6b6b6b;
 }
-.myButton:hover {
-	background-color:#eb675e;
+.btn:hover {
+	background-color:#e1e4e6;
 }
-.myButton:active {
+.btn:active {
 	position:relative;
 	top:1px;
 }
 
-/** liste de boutons **/
-.btns-list{
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 500px;
-  justify-content: center;
+.sg {
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
+	background-color:#ffffff;
+	border-radius:6px;
+	position: fixed;
+	bottom: 5px;
+	right: 5px;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	cursor:pointer;
+	color:#666666;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
 }
-.btn{
-  margin: 15px;
+.sg:hover {
+	background:linear-gradient(to bottom, #f6f6f6 5%, #ffffff 100%);
+	background-color:#f6f6f6;
 }
-
+.sg:active {
+	position: fixed;
+	bottom: 5px;
+	right: 5px;
+}
 .signature{
   padding-top: 10px;
   padding-bottom: 10px;
